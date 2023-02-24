@@ -35,3 +35,10 @@ export DOCKER_PASS=password
 docker-retag registry.example.com/hello-world:v0.0.1 registry.example.com/hello-world:main
 # finally, it will fall back to checking ~/.docker/config.json for any inline auths for the registry
 ```
+
+## Run in Docker
+
+```bash
+docker run --rm -it -v ~/.docker/config.json:/root/.docker/config.json:ro \
+	docker-retag registry.example.com/hello-world:v0.0.1 registry.example.com/hello-world:main
+```
