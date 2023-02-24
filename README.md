@@ -1,6 +1,6 @@
 # docker-retag
 
-A simple tool to retag manifests in a remote manifest without having to pull the image locally.
+A simple tool to retag manifests in a remote registry without having to pull the image locally.
 
 This is only compatible with [v2 manifest format](https://docs.docker.com/registry/spec/manifest-v2-2/).
 
